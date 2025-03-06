@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 200px;
+            width: 400px;
+            background-image: url(https://wp.w3layouts.com/factorship/wp-content/themes/factorship/assets/images/g1.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            border: 2px solid black;
+            margin: 100px auto;
+        }
+        .border{
+            height:200px ;
+            width: 400px;
+            background: rgba(0,0,0,0.5);
+            transform: scale(0);
+        }
+        .main:hover .border{
+            transform: scale(1);
+            transition: 1s;
+        }
+        .factor{
+            text-align: center;
+            color: white;
+            padding-top: 70px;
+            background-color: rgba(0,0,0,0);
+            transform: scale(0);
+        }
+        .main:hover .factor{
+            transform: scale(1);
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="border">
+            <div class="factor">factorship</div>
+        </div>
+    </div>
+</body>
+</html>
