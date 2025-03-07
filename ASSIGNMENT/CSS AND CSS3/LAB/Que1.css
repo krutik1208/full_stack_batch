@@ -1,0 +1,48 @@
+#contact-form {
+    background-color: #f0f4f8; 
+    padding: 20px; 
+    width: 300px; 
+    border-radius: 8px; 
+    margin: 20px auto; 
+}
+
+
+.form-field {
+    width: 100%;
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid ; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+
+#name {
+    background-color: #fff; 
+}
+
+#email {
+    background-color: #fff; 
+}
+
+#message {
+    resize: vertical; 
+    background-color: #fff; 
+}
+
+
+#submit-btn {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+
+#submit-btn:hover {
+    background-color: #45a049; 
+    transition: background-color 0.3s ease; 
+}

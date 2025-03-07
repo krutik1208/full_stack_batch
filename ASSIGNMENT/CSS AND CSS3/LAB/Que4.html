@@ -1,0 +1,124 @@
+<!-- Task: Create a 3x3 grid of product cards using CSS Grid. Each card should contain: o A product image. o A product title.
+o A price. Additional Requirements: o Use grid-template-columns to create the grid layout. o Use grid-gap to add spacing
+between the grid items. o Apply hover effects to each card for better interactivity -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid</title>
+    
+</head>
+<style>
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    padding: 15px; 
+    text-align: center; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.product-image {
+    width: 100%; 
+    height: auto; 
+    border-radius: 4px; 
+    margin-bottom: 10px; 
+}
+
+
+.product-title {
+    font-size: 18px;
+    margin-bottom: 10px; 
+    color: #333; 
+}
+
+
+.product-price {
+    font-size: 16px;
+    color: #007BFF; 
+    font-weight: bold;
+}
+
+
+.product-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+
+  
+</style>
+<body>
+    <div class="grid-container">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product 1" class="product-image">
+            <h3 class="product-title">Cool T-Shirt</h3>
+            <p class="product-price">$19.99</p>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product 2" class="product-image">
+            <h3 class="product-title">Fancy Hat</h3>
+            <p class="product-price">$24.99</p>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product 3" class="product-image">
+            <h3 class="product-title">Sneakers</h3>
+            <p class="product-price">$59.99</p>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product 4" class="product-image">
+            <h3 class="product-title">Backpack</h3>
+            <p class="product-price">$39.99</p>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product 5" class="product-image">
+            <h3 class="product-title">Sunglasses</h3>
+            <p class="product-price">$14.99</p>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product 6" class="product-image">
+            <h3 class="product-title">Watch</h3>
+            <p class="product-price">$89.99</p>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product 7" class="product-image">
+            <h3 class="product-title">Jeans</h3>
+            <p class="product-price">$44.99</p>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product 8" class="product-image">
+            <h3 class="product-title">Jacket</h3>
+            <p class="product-price">$79.99</p>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Product 9" class="product-image">
+            <h3 class="product-title">Headphones</h3>
+            <p class="product-price">$29.99</p>
+        </div>
+    </div>
+</body>
+</html>
